@@ -27,7 +27,7 @@ app.use('/api/contact',contactRouter)
 //connect db
 mongoose.connect(process.env.MONGODB_URL,{dbName:"Amit_kumar_raj"}).then(()=>console.log('mongodb connected..!')).catch((err)=>console.log(err))
 
-const port = process.env.PORT || 9000;
+const port = process.env.PORT || 3000;
 
 app.listen(port,()=>{
     console.log(`server is running port ${port}`)
